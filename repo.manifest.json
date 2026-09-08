@@ -1,0 +1,25 @@
+{
+  "schema_version": "bfld.repository-manifest.v1",
+  "repository": "bfld-co/plusone",
+  "visibility": "public",
+  "classification": "own-identity-public-runtime-candidate",
+  "lifecycle": "active",
+  "baseline": "standard",
+  "profile": "github-pages-static-site",
+  "boundary": "portfolio",
+  "runtime": {
+    "provider": "github-pages",
+    "public_endpoint": "https://plusone.hachiproject.com",
+    "production_source_repository": "Matheus-BFLD/plusone",
+    "candidate_source_repository": "bfld-co/plusone",
+    "authority_cutover": "hold-until-staging-and-dns-gates-pass",
+    "preserve_domain": true,
+    "preserve_https": true,
+    "preserve_content_bytes": true
+  },
+  "authority": {
+    "owns_after_cutover": ["plusone-public-brand-object"],
+    "does_not_own": ["hachi-technical-ip", "bfld-corporate-brand", "client-data"]
+  },
+  "owners": ["bfld-co"]
+}
