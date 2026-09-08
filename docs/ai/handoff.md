@@ -17,14 +17,16 @@ Plusone foi preservada.
 **Verificado:** o dominio responde HTTP 200 e seu corpo possui o mesmo SHA-256
 do `index.html`; `CNAME` e `.nojekyll` conferem com o baseline.
 
-**Nao feito:** Pages, DNS, dominio, HTTPS, parent, conteudo e identidade nao
-foram alterados. O cutover permanece HOLD ate staging e controle DNS.
+**Nao feito:** DNS, dominio, HTTPS, parent, conteudo e identidade nao foram
+alterados. A Pages da organizacao foi criada somente como staging e ainda nao
+possui o dominio customizado.
 
 **Risco residual:** a producao ainda depende do repositorio pessoal predecessor
-e de um alias de conta substituido no DNS.
+e de um alias de conta substituido no DNS. O computador estava bloqueado e o
+controle DNS nao pode ser validado.
 
-**Proxima acao:** integrar o contrato, mover o clone para `ventures/` e criar
-uma Pages de staging da organizacao sem reclamar o dominio.
+**Proxima acao:** integrar a evidencia, mover o clone para `ventures/` e, com o
+computador desbloqueado, transferir a claim e o DNS usando a staging ja validada.
 
 **Rollback:** reverter a PR e restaurar o caminho anterior no Registry; producao
 permanece no predecessor.

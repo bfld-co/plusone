@@ -12,7 +12,9 @@
     "public_endpoint": "https://plusone.hachiproject.com",
     "production_source_repository": "Matheus-BFLD/plusone",
     "candidate_source_repository": "bfld-co/plusone",
-    "authority_cutover": "hold-until-staging-and-dns-gates-pass",
+    "staging_endpoint": "https://bfld-co.github.io/plusone/",
+    "staging_state": "built-content-parity-passed",
+    "authority_cutover": "hold-until-dns-control-is-available",
     "preserve_domain": true,
     "preserve_https": true,
     "preserve_content_bytes": true
