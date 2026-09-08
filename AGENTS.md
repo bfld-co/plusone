@@ -1,93 +1,55 @@
-# AGENTS.md — plusone
+# AGENTS.md: Plusone public brand object
 
-> Contrato operacional único deste repositório. `CLAUDE.md` importa este arquivo.
-> Kernel: `anchora-co/agent-os` · registro: `agent-os/registry/repos.yaml` (`cof-plusone`)
+Antes de qualquer acao, leia o kernel global em
+`/Users/antonaci/BFLD/.agent-os/AGENTS.md`.
 
-## 1. Identidade
+Confirme este repositorio no Registry v3 em
+`/Users/antonaci/BFLD/.agent-os/registry/repos.yaml` e opere somente no
+`canonical_path` declarado.
 
-| Campo | Valor |
-|---|---|
-| frente | coffee |
-| papel | canônico |
-| entidade | Hachi |
-| fonte da verdade de | publicação do objeto de marca Hachi × Plusone — Emotional Coordinates, servido em `https://plusone.hachiproject.com` |
-| caminho local | `~/Anchora/coffee/plusone` |
+## Identidade e autoridade
 
-**Repositório público.** É o único repositório público do portfólio café: tudo
-que entra aqui é legível por qualquer pessoa.
+Este repositorio publica um objeto de marca Hachi x Plusone. Hachi e Plusone
+preservam identidade propria. A BFLD governa o processo e a disciplina do
+repositorio, sem substituir a identidade do produto por sua marca corporativa.
 
-## 2. Ordem de leitura
+Este repositorio nao e fonte de IP tecnico, operacao, precos, dados comerciais
+ou decisoes institucionais da Hachi ou da BFLD.
 
-1. este arquivo
-2. `README.md` — inclui o procedimento de publicação em três passos
-3. `docs/ai/handoff.md`
-4. `index.html` — o objeto de marca de quatro seções (Presentation, Brand
-   Guidelines, Crossmodal Coffee, BrandBook), unificadas sob o design system do
-   BrandBook. Cerca de 2,2 MB por causa da fotografia embutida.
-5. `CNAME` — domínio customizado lido pelo GitHub Pages
+## Ordem de leitura
 
-## 3. Fronteiras
+1. este arquivo;
+2. `README.md`;
+3. `repo.manifest.json`;
+4. `.bfld-engineering/project.json`;
+5. `docs/engineering/04-work-packages/WP-0001-bfld-runtime-contract.md`;
+6. `docs/engineering/04-work-packages/WP-0002-pages-authority-cutover.md`;
+7. `docs/ai/handoff.md`.
 
-- **Não é** o repositório de IP da Hachi. Marca, HECS e arquitetura do Hachi OS
-  vivem em `Hachi`, que é privado e contém IP confidencial.
-- **Não é** aplicação: é uma página estática publicada pelo GitHub Pages a
-  partir da raiz de `main`.
-- **Nunca entra aqui:** IP técnico não aprovado para público, protocolo de
-  processo, dado comercial, preço, economia de franquia ou qualquer material
-  interno da Paradise Horse, da Valley Coffee ou da Yumgaafe.
-- **Não se mistura com** `paradise-horse` nem `valley-coffee`: entidades
-  distintas, públicos distintos.
+`index.html`, `CNAME` e `.nojekyll` sao artefatos de producao e nao devem ser
+alterados fora de Work Package aprovado.
 
-## 4. Método
+## Runtime e fronteiras
 
-- MAES: não se aplica (não há `.anchora-engineering/` neste repositório).
-- Modo de marca: sub-marca Hachi, no sistema visual do BrandBook Hachi ×
-  Plusone. Nunca o sistema visual da Anchora, da Paradise Horse ou da Yumgaafe.
+- O dominio publico atual responde por GitHub Pages e entrega exatamente o
+  `index.html` desta arvore.
+- A Pages atual ainda pertence ao repositorio pessoal predecessor. A Pages da
+  organizacao deve ser validada como staging antes de qualquer troca de DNS.
+- O dominio, HTTPS, arquivo `CNAME`, bytes publicados e rollback sao invariantes.
+- Nada confidencial, segredo, token, preco ou IP tecnico entra neste repositorio
+  publico.
 
-## 5. Executor
+## Metodo e coordenacao
 
-- Primário: **claude** — cópia, narrativa e ajuste do objeto de marca.
-- Secundário: **codex** — `gh`, PRs, publicação e DNS/Pages.
+- Metodo: BASE-1.2, proporcional ao risco.
+- Envelope: `.bfld-engineering/`.
+- Codex, Claude e Flightdeck obedecem ao mesmo kernel, Registry e contrato.
+- Mudanca material exige CI, evidencia, rastreabilidade e handoff.
 
-## 6. Regras invioláveis
+## Definicao de pronto
 
-1. Repositório público: nada confidencial entra. Na dúvida sobre o nível de
-   confidencialidade de uma alegação, ela não é publicada.
-2. IP técnico e alegação de processo da Hachi só aparecem aqui com aprovação
-   explícita e registrada.
-3. O site é servido a partir de `index.html` na raiz de `main`, via GitHub
-   Pages, com o domínio lido do arquivo `CNAME`. Não remova o `CNAME` nem o
-   `.nojekyll`.
-4. `index.html` é um arquivo grande, com fotografia embutida. Substitua o
-   arquivo inteiro por uma versão entregue e verificada; não edite trechos
-   binários embutidos à mão.
-5. Toda mudança é renderizada e inspecionada no navegador antes de publicar, e
-   a página publicada é conferida no domínio público depois do deploy.
-6. Hachi não é marca de varejo: esta é uma peça de marca, não um canal de
-   venda.
-7. Segredo não entra no repositório: nem token, nem `.env`, nem chave.
-8. Trabalho não declarado não existe: ao terminar, atualize
-   `docs/ai/handoff.md`.
-
-## 7. Definição de pronto
-
-- Página renderizada e inspecionada localmente e depois em
-  `https://plusone.hachiproject.com`.
-- `CNAME` e `.nojekyll` preservados; HTTPS ativo.
-- Nenhuma alegação confidencial ou não aprovada publicada.
-- `docs/ai/handoff.md` atualizado e risco residual declarado.
-
-## 8. Handoff
-
-Ao terminar, acrescente em `docs/ai/handoff.md`:
-
-```markdown
-## <AAAA-MM-DD> · <codex|claude> · coffee
-
-**Objetivo:**
-**Feito:**
-**Verificado:**
-**Não feito:**
-**Risco residual:**
-**Próxima ação:**
-```
+- `node scripts/validate-repository.mjs` passa;
+- o hash do site e os controles Pages conferem com o baseline;
+- staging e producao sao validadas antes e depois de qualquer cutover;
+- DNS muda uma unica vez, com rollback documentado;
+- `docs/ai/handoff.md` registra separadamente commit, PR, CI, merge e runtime.

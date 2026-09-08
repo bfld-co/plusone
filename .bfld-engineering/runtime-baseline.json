@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "captured_at": "2026-09-07",
+  "public_endpoint": "https://plusone.hachiproject.com",
+  "http_status": 200,
+  "provider": "github-pages",
+  "production_source_repository": "Matheus-BFLD/plusone",
+  "candidate_source_repository": "bfld-co/plusone",
+  "files": {
+    "index.html": "e87ca4cfeeafe4918a7514c82eb346b512de6cf0f664f968d61c99dafb7d3035",
+    "CNAME": "c9d81819c2e3b88de8b96b18b8b4356d8ee9c0a618f1cf5afd8a7a7912348d22",
+    ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "live_body_sha256": "e87ca4cfeeafe4918a7514c82eb346b512de6cf0f664f968d61c99dafb7d3035"
+}

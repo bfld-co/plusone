@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "risk_level": "R4",
+  "concern": "GitHub Pages authority and DNS target cutover",
+  "production_mutation_authorized": false,
+  "protected_invariants": [
+    "public domain",
+    "HTTPS",
+    "index bytes",
+    "CNAME",
+    "current production source",
+    "rollback repository"
+  ],
+  "rollback": "Restore the previous DNS target and personal predecessor Pages binding; content bytes remain identical in both repositories."
+}

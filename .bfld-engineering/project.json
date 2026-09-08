@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "product": "plusone",
+  "method": "BASE-1.2",
+  "repository_baseline": "Standard",
+  "product_criticality": "C2",
+  "risk_assessment_path": ".bfld-engineering/risk-assessment.json",
+  "canonical_repository": "bfld-co/plusone",
+  "canonical_path": "/Users/antonaci/BFLD/ventures/plusone",
+  "current_work_package": "WP-0002",
+  "work_packages_path": "docs/engineering/04-work-packages",
+  "traceability_path": "docs/engineering/traceability.csv"
+}
