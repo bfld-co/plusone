@@ -1,7 +1,7 @@
 # WP-0001: BFLD runtime contract and local organization
 
 - Risk: R3
-- Status: ready_for_registry
+- Status: complete
 - Production mutation: not authorized
 
 ## Acceptance
