@@ -6,6 +6,9 @@
   "provider": "github-pages",
   "production_source_repository": "Matheus-BFLD/plusone",
   "candidate_source_repository": "bfld-co/plusone",
+  "candidate_staging_endpoint": "https://bfld-co.github.io/plusone/",
+  "candidate_staging_http_status": 200,
+  "candidate_staging_body_sha256": "e87ca4cfeeafe4918a7514c82eb346b512de6cf0f664f968d61c99dafb7d3035",
   "files": {
     "index.html": "e87ca4cfeeafe4918a7514c82eb346b512de6cf0f664f968d61c99dafb7d3035",
     "CNAME": "c9d81819c2e3b88de8b96b18b8b4356d8ee9c0a618f1cf5afd8a7a7912348d22",

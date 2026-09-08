@@ -1,5 +1,5 @@
 requirement,evidence,status
-PLUS-GOV-001,EVID-001 BFLD common entrypoints,in_progress
+PLUS-GOV-001,EVID-001 BFLD common entrypoints,passed
 PLUS-CONTENT-001,EVID-001 exact file and response hashes,passed
-PLUS-PAGES-001,EVID-001 organization staging Pages,HOLD
+PLUS-PAGES-001,EVID-001 organization staging Pages,passed
 PLUS-DNS-001,EVID-001 custom domain authority cutover,HOLD
