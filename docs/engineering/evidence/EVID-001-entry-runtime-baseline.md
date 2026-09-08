@@ -19,3 +19,12 @@
 - The production custom-domain claim and DNS were not changed.
 
 No environment value, private data or product IP was inspected for this gate.
+
+## BFLD path exit evidence
+
+- Registry v3 passed 96/96 with lifecycle `active`, boundary `portfolio` and
+  canonical path `/Users/antonaci/BFLD/ventures/plusone`.
+- The clone was moved with its Git directory and remains clean on `main`.
+- The local validator, staging HTTP 200 and production/staging hash parity passed
+  again after the move.
+- The DNS and production custom-domain claim remain unchanged under WP-0002.

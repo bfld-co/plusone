@@ -25,8 +25,8 @@ possui o dominio customizado.
 e de um alias de conta substituido no DNS. O computador estava bloqueado e o
 controle DNS nao pode ser validado.
 
-**Proxima acao:** integrar a evidencia, mover o clone para `ventures/` e, com o
-computador desbloqueado, transferir a claim e o DNS usando a staging ja validada.
+**Proxima acao:** com o computador desbloqueado, transferir a claim e o DNS
+usando a staging ja validada.
 
 **Rollback:** reverter a PR e restaurar o caminho anterior no Registry; producao
 permanece no predecessor.
